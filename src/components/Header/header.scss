@@ -1,0 +1,108 @@
+.tip {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 5px;
+    padding: 10px 5px;
+    color: white;
+    display: inline;
+    position: fixed;
+    z-index: 2;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $header-height;
+    background-color: $header-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 1;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 140px;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+        width: 45%;
+
+        
+
+        input {
+            width: 70%;
+            line-height: 24px;
+            outline: none;
+            font-size: 16px;
+            border: $header-border 1px solid;
+            padding: 2px 10px;
+            color: $header-text;
+            border-right: none;
+        }
+
+        .fa-keyboard {
+            border: $header-border 1px solid;
+            padding: 5px;
+            padding-right: 10px;
+            border-left: none;
+            font-size: 18px;
+            color: $header-text;
+        }
+
+        .fa-search {
+            text-align: center;
+            width: 65px;
+            border: $header-border solid 1px;
+            padding: 7px 0;
+            border-left: none;
+            font-size: 14px;
+            color: $header-text;
+        }
+
+        .fa-microphone {
+            color: $header-text;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: $header-text;
+        }
+
+        button {
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            color: $header-user-btn;
+            border: $header-user-btn 1px solid;
+            background: $header-bg;
+
+            .fa-user {
+                line-height: 0.1;
+                margin-right: -2px;
+                color: $header-user-btn;
+            }
+        }
+    }
+}

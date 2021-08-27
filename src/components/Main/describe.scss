@@ -1,0 +1,77 @@
+.main__describe {
+    position: relative;
+
+    .subsection {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subscribe {
+        background-color: rgb(219, 1, 1);
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0 20px;
+        right: 0;
+    }
+
+    .description {
+        font-family: 'Roboto';
+        font-size: 14px;
+        width: 70%;
+        height: 100px;
+        padding-left: 6%;
+        
+        
+        
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+           display: none;
+        }
+    }
+
+    .else {
+        background-color: unset;
+        border: unset;
+        font-size: 15px;
+        font-weight: bold;
+        color: $header-text;
+        transition: color .2s linear;
+        text-transform: uppercase;
+        padding-left: 6%;
+
+        &:hover {
+            cursor: pointer;
+            color: #333;
+        }
+    }
+
+    &-channel {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 6%;
+
+        img {
+            position: absolute;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+        }
+
+        .name {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+
+        .subscribers {
+            font-size: 14px;
+            color: $header-text;
+        }
+    }
+}

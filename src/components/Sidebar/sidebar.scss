@@ -1,0 +1,43 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    overflow: scroll;
+    margin-top: $header-height;
+    padding-bottom: 40px;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+        background-color: $header-bg;
+        border-radius: 8px;
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $header-border;
+        border-radius: 8px;
+    }
+
+    @include list(main);
+    @include list(library);
+    @include list(best);
+    @include list(another);
+    @include list(catalog);
+
+    &__best {
+        @include titleSide;
+    }
+
+    &__another {
+        @include titleSide;
+    }
+
+    &__footer {
+        font-size: 12px;
+        padding: 20px 25px;
+        line-height: 1.5;
+        color: $header-text;
+        font-weight: bold;
+    }
+}

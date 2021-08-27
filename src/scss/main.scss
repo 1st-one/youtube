@@ -1,0 +1,43 @@
+@import "_variables";
+@import "_mixins";
+@import "@cmp/Header/header.scss";
+@import "@cmp/Sidebar/sidebar.scss";
+@import "@cmp/Content/content.scss";
+@import "@cmp/Categories/categories.scss";
+@import "@cmp/Main/main.scss";
+@import "@cmp/List/list.scss";
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), url(../../assets/fonts/Roboto-Regular.ttf) format("opentype");
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    font-size: $main-fz;
+    font-family: "Roboto";
+   
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $header-border;
+        border-radius: 8px;
+    }
+}
+
+.root {
+    height: 100%;
+    min-width: 100%;
+}
