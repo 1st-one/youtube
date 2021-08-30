@@ -10,7 +10,7 @@ const Header = ({ handlerInput, input, changeState }) => {
         <header className="header" onMouseOver={(e) => focus(e)} onMouseOut={(e) => remover(e)}>
             <div className="header__logo">
                 <i className="fas fa-bars"></i>
-                <Link to="/"><img src={img} alt="" width="100px" /></Link>
+                <Link to="/"><img data-tooltip="На главную YouTube" src={img} alt="" width="100px" /></Link>
             </div>
             <div className="header__input">
                 <input onInput={handlerInput} className='input' list="search" value={input} type="text" placeholder="Введите запрос" />
