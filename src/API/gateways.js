@@ -1,4 +1,4 @@
-const key = 'AIzaSyCBFtDjKegL9nuvU1BxTH0t1YERDEm5mtw'; // 'AIzaSyCBFtDjKegL9nuvU1BxTH0t1YERDEm5mtw' \ AIzaSyAA4wioIXprC3PE3n2WL6CXu2DZZXGq5S8
+const key = 'AIzaSyCBFtDjKegL9nuvU1BxTH0t1YERDEm5mtw'; 
 const popularUrl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=statistics&maxResults=8&
 part=recordingDetails&part=player&chart=mostPopular&key=${key}`;
 
