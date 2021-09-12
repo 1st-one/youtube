@@ -26,7 +26,7 @@ const Content = () => {
         let coords = document.querySelector(`.content`).getBoundingClientRect();
         let client = document.documentElement.clientHeight;
 
-        if (coords.bottom < client + 100) {
+        if (coords.bottom < client + 300) {
             await Request.getMore(dataVideo.token).then(res => {
                 setDataVideo({
                     ...dataVideo,

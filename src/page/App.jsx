@@ -3,6 +3,7 @@ import Home from './Home';
 import Video from './Video';
 import Search from './Search';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './Login';
 
 const App = () => {
     const [input, setInput] = useState('');
@@ -13,6 +14,7 @@ const App = () => {
     };
 
     return (
+        // <Login />
         <Router>
             <>   
                 <Switch>
@@ -25,6 +27,9 @@ const App = () => {
                     <Route path="/search">
                         <Search handlerInput={(e) => handlerInput(e)} input={input}/>
                     </Route>
+                    {/* <Route path="/login">
+                        <Login />
+                    </Route> */}
                 </Switch>
             </>
         </Router>
