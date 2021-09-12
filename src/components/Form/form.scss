@@ -1,0 +1,36 @@
+body {
+    background: rgba(94, 89, 89, 0.322);
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+
+    form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30vw;
+        min-height: 400px;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        border: rgb(180, 180, 180) solid 1px;
+        border-radius: 10px;
+        background: #fff;
+        
+        @include addInput('.login');
+        @include addInput('.password');
+
+        .submit {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+

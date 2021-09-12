@@ -26,9 +26,9 @@ const Header = ({ handlerInput, input, changeState }) => {
             <div className="header__user">
                 <i data-tooltip="smth" className="fas fa-grip-horizontal"></i>
                 <i data-tooltip="smth" className="fas fa-ellipsis-v"></i>
-                <button className="header__user-btn">
+                <Link to='/login'><button className="header__user-btn">
                     <i className="fas fa-user"></i>
-                    войти</button>
+                    войти</button></Link>
             </div>
         </header>
     );

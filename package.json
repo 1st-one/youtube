@@ -4,7 +4,7 @@
   "description": "Replica of YT",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --open",
+    "start": "cross-env NODE_ENV=development webpack serve --open --stats-children",
     "build": "cross-env NODE_ENV=production webpack"
   },
   "repository": {

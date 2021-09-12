@@ -97,6 +97,18 @@
             color: $header-user-btn;
             border: $header-user-btn 1px solid;
             background: $header-bg;
+            transition: color .2s linear, background .2s linear;
+
+            &:hover{
+                cursor: pointer;
+                background: $header-user-btn;
+                color: white;
+
+                i {
+                    color: white;
+                    transition: color .2s linear;
+                }
+            }
 
             .fa-user {
                 line-height: 0.1;
@@ -104,5 +116,7 @@
                 color: $header-user-btn;
             }
         }
+
+        
     }
 }

@@ -6,6 +6,7 @@
 @import "@cmp/Categories/categories.scss";
 @import "@cmp/Main/main.scss";
 @import "@cmp/List/list.scss";
+@import "@cmp/Form/form.scss";
 
 @font-face {
     font-family: "Roboto";
@@ -23,6 +24,7 @@ html {
     margin: 0;
     font-size: $main-fz;
     font-family: "Roboto";
+    background: none;
    
 
     &::-webkit-scrollbar {
