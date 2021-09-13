@@ -27,9 +27,9 @@ const App = () => {
                     <Route path="/search">
                         <Search handlerInput={(e) => handlerInput(e)} input={input}/>
                     </Route>
-                    {/* <Route path="/login">
+                    <Route path="/login">
                         <Login />
-                    </Route> */}
+                    </Route>
                 </Switch>
             </>
         </Router>
